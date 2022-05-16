@@ -129,12 +129,10 @@ def start_game():
         o_player = RandomComputerPlayer("O")
     elif user_letter_choice == "O" and mode_choice == "Hard":
         x_player = SuperComputerPlayer("X")
-        x_player.set_opponent_side(user_letter_choice)
         o_player = HumanPlayer("O")
     else:
         x_player = HumanPlayer("X")
         o_player = SuperComputerPlayer("O")
-        o_player.set_opponent_side(user_letter_choice)
 
     return x_player, o_player
 
